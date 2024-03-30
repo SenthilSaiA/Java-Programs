@@ -1,0 +1,32 @@
+package abc;
+import java.util.Scanner;
+public class own {
+
+	        public static void main(String[] args) {
+	            Scanner s=new Scanner(System.in);
+	            System.out.println("enter the string");
+	            String input = s.next();
+	            String[] myArray = input.split("");
+	            
+	            String compare = "abcdefghijklmnopqrstuvwxyz";
+	            String[] myCompare = compare.split("");
+	            
+	            String output = "abcdefghijklmnopqrstuvwxyz";
+	            
+	            for (int i = 0; i < myCompare.length; i++)
+	            {
+	                for (int j = 0; j < myArray.length; j++)
+	                {
+	                    
+	                    if(myCompare[i].equals(myArray[j]))
+	                    {
+	                          output = output.replace(myArray[j], "");
+	                    }
+	           
+	                }
+	            }
+	            
+	            System.out.println(output); 
+	        }
+	    
+	    }
